@@ -1,0 +1,32 @@
+<wxs module="filters" src="./../../utils/filters.wxs"></wxs>
+<!--pages/demos/index.wxml-->
+
+<van-button type="primary">按钮</van-button>
+<van-row>
+  <van-col span="8">span: 8</van-col>
+  <van-col span="8">span: 8</van-col>
+  <van-col span="8">span: 8</van-col>
+</van-row>
+<van-row>
+  <van-col span="4">span: 4</van-col>
+  <van-col span="10" offset="4">offset: 4, span: 10</van-col>
+</van-row>
+<van-row>
+  <van-col offset="12" span="12">offset: 12, span: 12</van-col>
+</van-row>
+<van-row gutter="20">
+  <van-col span="8">span: 8</van-col>
+  <van-col span="8">span: 8</van-col>
+  <van-col span="8">span: 8</van-col>
+</van-row>
+
+<text>保留小数点两位的过滤器：{{filters.toFix(123456.789,2)}}</text>
+
+
+<view style="border:solid 1px red;" class="van-ellipsis">这是一段宽度限制 250px 的文字，后面的内容会省略</view>
+
+<!-- 最多显示两行 -->
+<view style="border:solid 1px red;" class="van-multi-ellipsis--l2">这是一段最多显示两行的文字，后面的内容会省略这是一段最多显示两行的文字，后面的内容会省略这是一段最多显示两行的文字，后面的内容会省略</view>
+
+<!-- 最多显示三行 -->
+<view style="border:solid 1px red;" class="van-multi-ellipsis--l3">这是一段最多显示三行的文字，后面的内容会省略这是一段最多显示两行的文字，后面的内容会省略这是一段最多显示两行的文字，后面的内容会省略这是一段最多显示两行的文字，后面的内容会省略这是一段最多显示两行的文字，后面的内容会省略这是一段最多显示两行的文字，后面的内容会省略这是一段最多显示两行的文字，后面的内容会省略</view>

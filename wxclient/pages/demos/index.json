@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Demo页标题",
+  "usingComponents": {
+    "van-button": "/path/to/vant-weapp/dist/button/index",
+    "van-row": "/path/to/vant-weapp/dist/row/index",
+    "van-col": "/path/to/vant-weapp/dist/col/index"
+  }
+}

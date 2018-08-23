@@ -1,0 +1,13 @@
+var filters = {
+  toFix: function (value, count) {
+    // parserFloat is not defined
+    // var num = parserFloat(value);
+    // return num.toFixed(count);
+    return value
+  }
+}
+
+module.exports = {
+  // getQuantityStr: getQuantityStr
+  toFix: filters.toFix
+}
